@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e7d87040ce4f66a07c75b885f4f80, type: 3}
+  m_Name: Shape
+  m_EditorClassIdentifier: 
+  seed: 100
+  planetRadius: 10
+  direction: 1
+  noiseLayers:
+  - enabled: 1
+    usePrevLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.03
+        numLayers: 8
+        baseFrequency: 0.98
+        frequency: 2.36
+        amplitude: 0.65
+        centre: {x: 1.8, y: 7.3, z: 0.27}
+        minValue: 1.42
+      ridgidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0.8
+  - enabled: 1
+    usePrevLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1.12
+        numLayers: 4
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0.33
+      ridgidNoiseSettings:
+        strength: 2.01
+        numLayers: 8
+        baseFrequency: 3.75
+        frequency: 1.19
+        amplitude: 0.06
+        centre: {x: 7.43, y: -1.61, z: 4.44}
+        minValue: 0.73
+        weightMultiplier: 1.18
+  craterSettings:
+    numCraters: 0
+    craterRadiusMin: 0.01
+    craterRadiusMax: 0.15
+    rimWidth: 0.7
+    rimSteepness: 0.42
+    floorHeightMin: -1
+    floorHeightMax: -0.5

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e7d87040ce4f66a07c75b885f4f80, type: 3}
+  m_Name: moonShape
+  m_EditorClassIdentifier: 
+  seed: 4005
+  planetRadius: 8
+  direction: 1
+  noiseLayers:
+  - enabled: 1
+    usePrevLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.05
+        numLayers: 8
+        baseFrequency: 0.25
+        frequency: 2
+        amplitude: 0.83
+        centre: {x: -1.33, y: -2.79, z: 1.89}
+        minValue: 0.1
+      ridgidNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplier: 0
+  craterSettings:
+    numCraters: 300
+    craterRadiusMin: 0.0405
+    craterRadiusMax: 0.2
+    rimWidth: 0.33
+    rimSteepness: 0.391
+    floorHeightMin: -0.91
+    floorHeightMax: -0.648

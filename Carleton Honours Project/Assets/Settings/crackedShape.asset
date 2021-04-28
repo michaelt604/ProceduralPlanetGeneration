@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e7d87040ce4f66a07c75b885f4f80, type: 3}
+  m_Name: crackedShape
+  m_EditorClassIdentifier: 
+  seed: 260
+  planetRadius: 8
+  direction: 1
+  noiseLayers:
+  - enabled: 1
+    usePrevLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.05
+        numLayers: 8
+        baseFrequency: 4.31
+        frequency: 5.74
+        amplitude: 0.42
+        centre: {x: 0.6, y: -19.4, z: 1.05}
+        minValue: 0.25
+      ridgidNoiseSettings:
+        strength: 0.27
+        numLayers: 8
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 4.36, y: -6.8, z: 0}
+        minValue: 0.93
+        weightMultiplier: 1.08
+  - enabled: 1
+    usePrevLayerAsMask: 0
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      ridgidNoiseSettings:
+        strength: -0.51
+        numLayers: 8
+        baseFrequency: 3.22
+        frequency: 3.97
+        amplitude: 0.47
+        centre: {x: -16.63, y: -5.79, z: 16.6}
+        minValue: 0.72
+        weightMultiplier: 0.84
+  - enabled: 0
+    usePrevLayerAsMask: 0
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseFrequency: 1
+        frequency: 2
+        amplitude: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+      ridgidNoiseSettings:
+        strength: -0.51
+        numLayers: 8
+        baseFrequency: 3.22
+        frequency: 3.97
+        amplitude: 0.47
+        centre: {x: 13.2, y: 9.13, z: -11.93}
+        minValue: 0.72
+        weightMultiplier: 0.84
+  craterSettings:
+    numCraters: 10
+    craterRadiusMin: 0.114
+    craterRadiusMax: 0.2
+    rimWidth: 0.463
+    rimSteepness: 0.466
+    floorHeightMin: -0.774
+    floorHeightMax: -0.34
