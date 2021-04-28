@@ -12,3 +12,6 @@
  
  ## Cracked
  The Cracked class, although heavily derived from science fiction, it creates a very unique atmosphere and would be a great playable environment for a game or simulation. Its defining features are deep cracks along the planet’s surface exposing the molten interior of the planet.
+
+ ### How to Run
+ Running and switching between planets can be a bit tricky. There was not enough time to implement a proper planet switch, so a spawner class and inspector parameters are used to facilitate switching between the classes. The spawner class can be accessed under the hierarchy by selection the “Spawner”, as shown in A-1. This brings up the parameters as shown in A-2 under the inspector. The Planet Type is a dropdown which can be selected to show all of the class types, physically selecting the class will display the class on screen. Once the planet is brought forward, it must be selected again from the hierarchy on the left side of the screen.
